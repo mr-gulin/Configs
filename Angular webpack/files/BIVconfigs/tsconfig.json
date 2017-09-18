@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": [
+        "./src/app/*"
+      ],
+      "@common/*": [
+        "../CommonComponents/src/app/*"
+      ],
+      "@commonNodeModules/*": [
+        "../CommonComponents/node_modules/*"
+      ],
+      "@config/*": [
+          "./src/app/config/*"
+      ]
+    },
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noStrictGenericChecks": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  }
+}
